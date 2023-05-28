@@ -129,4 +129,27 @@ fun main(){
     println(myOptional)
     myOptional = "Mi cadena de texto opcional"
     println(myOptional)
+
+    //-- Llamada a una función
+    myFunction()
+
+    //-- Trabajo con clases
+    var myClass = MyClass("Cristina",25)
+    println(myClass.name)
+    println(myClass.age)
 }
+
+//-- Funciones
+fun myFunction(){
+    println("Esto es una funcion")
+}
+
+//-- Clases
+/* Kotlin es un lenguaje de programación orientado a objetos.
+*  Vemos que el constructor va directamente en los parámetros de la
+*  clase, no es necesario, como por ejemplo en js, crear un constructor dentro
+*  de la clase
+*/
+class MyClass(val name:String, val age: Int)
+//-- Se puede encapsular dentro de la clase funciones propias de la misma
+//-- abriendo el cuerpo de la clase con {}
