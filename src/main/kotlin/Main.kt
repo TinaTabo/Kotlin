@@ -43,4 +43,56 @@ fun main(){
     myBool = true
     println(myBool)
     //----------------hasta-aqui-los-tipos-de-datos-basicos------------------
+
+    //-- Constantes
+    val myConst = "Mi propiedad constante"
+    // myConst = "Mi nueva propiedad constante" ERROR => una constante NO puede modificarse
+
+    //-- Control de flujo
+
+    //-- If ... elseif ... else
+    myInt = 100
+    myString = "Hola"
+    if (myInt == 7 && myString == "Hola"){
+        println("El valor es 7")
+    }else if(myInt == 10 || myString == "Hola"){
+        println("El valor es 10")
+    } else{
+        println("El valor es distinto de 7 y de 10")
+    }
+
+    //-- Estructuras
+
+    //-- Lista
+    var myList = listOf("Lunes", "Martes", "Miércoles", "Jueves", "Viernes")
+    println(myList)
+    println(myList[1])
+    /* En este punto si quisieramos añadir un elemento a la lista no seria posible.
+       Esto se debe a que en Kotlin las estructuras por defecto se crean de forma
+       inmutable. Si se quiere crear una lista que pueda mutar se debe definir como
+       se ve a continuacion
+     */
+    var myMutableList = mutableListOf("Lunes", "Martes", "Miércoles", "Jueves", "Viernes")
+    println(myMutableList)
+    myMutableList.add("Lunes")
+    println(myMutableList)
+
+    //-- Sets
+    /* Estructura no ordenada, agil, rapida y optima
+    *  Se usa cuando queremos guardar muchos datos y nos da igual el orden
+    * y cuando no queremos dar soportes repetidos.
+    * Los Sets NO admiten duplicados.
+    */
+    var mySet = setOf("Cris", "Taboada", "@Borahae798", "Cris")
+    println(mySet)
+
+    //-- Maps
+    /* Estructura compleja no ordenada, que nos permite guardar diferentes propiedades
+    *  de tipo clave:valor
+    */
+    val myMap = mutableMapOf("Cris" to 25, "Jin" to 30, "Jungkook" to 26)
+    println(myMap["Jin"])
+    // Añadir a alguien mas
+    myMap["Jimin"] = 28
+
 }
