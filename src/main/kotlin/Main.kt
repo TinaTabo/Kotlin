@@ -95,4 +95,26 @@ fun main(){
     // Añadir a alguien mas
     myMap["Jimin"] = 28
 
+
+    //-- Bucles
+
+    //-- for
+    for (value in myList){
+        println(value)
+    }
+
+    for (value in mySet){
+        println(value)
+    }
+
+    for (value in myMap){
+        println(value)
+    }
+
+    //-- while
+    var myCounter = 0
+    while (myCounter < myList.count()){
+        println(myList[myCounter])
+        myCounter++
+    }
 }
