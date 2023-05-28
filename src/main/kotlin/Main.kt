@@ -117,4 +117,16 @@ fun main(){
         println(myList[myCounter])
         myCounter++
     }
+
+    //-- Opcionales
+    /* Dar la capacidad a una variable pueda llegar a ser null,
+    * por el motivo que sea.
+    * Para hacer esta opcionalidad de que un tipo de dato que tenemos pueda tomar
+    * el valor del tipo de dato o por otro lado tb ser nulo, simplemente debemos añadir
+    * un interrogante al lado de la definición del tipo de dato.
+    */
+    var myOptional: String? = null
+    println(myOptional)
+    myOptional = "Mi cadena de texto opcional"
+    println(myOptional)
 }
