@@ -137,6 +137,11 @@ fun main(){
     var myClass = MyClass("Cristina",25)
     println(myClass.name)
     println(myClass.age)
+
+    //-- Concatenaciones
+    println("Este es el valor de la variable myString: " + myString)
+    println("Este es el valor de la variable myInt: " + myInt)
+    println("Este es el valor de la variable myInt $myInt")
 }
 
 //-- Funciones
